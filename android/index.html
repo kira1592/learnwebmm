@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <div class="blurred_bar"> 
+    <div class="a_web">
+        <img class="logo" src="images/logo.png"  >
+        <div class="actionbar_items">
+            <div class="darkmodehover"> <img class="darkmode" src="images/outline_dark_mode_black_24dp.png" id="icon"></div>
+            <div class="indigater"></div>
+            <a class="tabs" id="learn" onclick="olearn()" >Learn</a>
+            <a class="tabs" id="more" onclick="omore()">More</a>
+            <a class="tabs" id="tools" onclick="otools()">Tools</a>
+            <a class="tabs" id="about" onclick="oabout()">About</a>
+        </div>
+    </div>
+    <div class="a_android">
+        <img class="logo" src="images/logo.png" >
+    </div>
+    </div>
+    <div class="con">
+    
+   
+    <div class="buttom_sheet">
+
+    </div>
+
+    </div>
+    
+
+
+    <script>
+        var icon = document.getElementById("icon");
+     
+       
+      
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/outline_light_mode_white_24dp.png";
+              
+          
+            
+            }else{
+                icon.src = "images/outline_dark_mode_black_24dp.png";
+               
+            }
+        }
+
+   
+      
+
+           
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+:root{
+    --colorPrimary: #2962ff;
+    --Backgrounddark: #f1f1f1;
+    --Background: rgb(255, 255, 255);
+    --Text: #020202;
+    --hover: rgba(36, 35, 35, 0.295);
+}
+.dark-theme{
+    --colorPrimary: #7201d4;
+    --Backgrounddark: #111111;
+    --Background: rgb(10, 10, 10);
+    --Text: #f7f7f7;
+    --hover: rgb(3, 3, 3);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+ }
+
+ div.background{
+     height: 100vh;
+     width: 100vw;
+     background-color: var(--Background);
+     transition: background 0.2s;
+ }
+
+ div.blurred_bar{
+    height: 56px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: fixed;
+    background-color: var(--Backgrounddark);
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+div.a_web{
+    height: 56px;
+    width: 100%;
+    margin: 0px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+div.a_android{
+    height: 40px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    display:none
+    
+}
+
+img.logo{
+    height: 80%;
+    width: auto;
+    margin: 8px;
+}
+
+img.darkmode{
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    padding: 3px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: background 0.4s
+}
+img.darkmode:hover{
+    background-color: var(--hover);
+}
+
+
+div.actionbar_items{
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+a.tabs{
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-family: 'Overpass Mono', monospace;
+    text-decoration: none;
+    color: var(--Text);
+    cursor: pointer;
+}
+
+a.tabs:hover{
+    color: var(--colorPrimary);
+}
+
+div.buttom_sheet{
+    background-color: lightsalmon;
+    display: flex;
+    position: fixed;
+    height: 24px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.con{
+    height: 100vh;
+    width: 100%;
+    background-color:var(--Background);
+    display: flex;
+    align-items:flex-end;
+    justify-content:center;
+}
+
+@media only screen and (max-width:700px){
+
+    
+    div.a_web{
+        display:none
+    }
+    div.blurred_bar{
+        height: 40px;
+    }
+    div.a_android{
+        display: flex
+    }
+   
+
+
+}
